@@ -1,0 +1,22 @@
+meta {
+  name: crear comentario
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/comentarios
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: 
+}
+
+body:json {
+  {
+    "comentario": "comentario de json-server",
+    "calificacion": "10"
+  }
+}
